@@ -42,10 +42,10 @@ export const MainForm: FC = () => {
 
     return (
         <div className="p-[24px] flex flex-col">
-            <input onChange={onChangeEventHandler} value={inputVal} style={{marginBottom: '12px'}}/>
-            <input onChange={onChangeEventHandler2} value={inputVal2} style={{marginBottom: '12px'}} />
+            <input className="text-gray-900 pl-1" onChange={onChangeEventHandler} value={inputVal} style={{ marginBottom: '12px' }} />
+            <input className="text-gray-900 pl-1" onChange={onChangeEventHandler2} value={inputVal2} style={{ marginBottom: '12px' }} />
             <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-                    onClick={onClickEventHandler}>Send</button>
+                onClick={onClickEventHandler}>Send</button>
         </div>
     )
 }

@@ -1,10 +1,10 @@
 // https://nextjs.org/docs/app/building-your-application/rendering/client-components
-"use client";
+'use client';
 
 import Image from 'next/image'
-import React, { useEffect, useState } from "react";
-import { MainForm } from "@/src/components/MainForm";
-import Link from "next/link";
+import React, { useEffect, useState } from 'react';
+import Link from 'next/link';
+import { MainForm } from '@/src/components/MainForm';
 export default function Home() {
 
   // https://learn.javascript.ru/variables
@@ -46,10 +46,7 @@ export default function Home() {
         {str}
       </h1>
       <h2 className="text-2xl font-extrabold mb-4 text-zinc-600">Menu</h2>
-      <ul>
-        <li>
-          <Link href="/">Home</Link>
-        </li>
+      <ul className="pb-4 text-2xl text-center">
         <li>
           <Link href="/about">About Us</Link>
         </li>

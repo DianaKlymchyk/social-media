@@ -3,7 +3,7 @@ import { AppService } from './app.service';
 
 @Controller()
 export class AppController {
-  constructor(private readonly appService: AppService) {}
+  constructor(private readonly appService: AppService) { }
 
   // localhost:3000
   @Get('/')
@@ -15,9 +15,9 @@ export class AppController {
   @Get('/cats')
   getCats(): string[] {
     return [
-        'aaa',
-        'bbb',
-        'ccc'
+      'aaa',
+      'bbb',
+      'ccc'
     ];
   }
 }
