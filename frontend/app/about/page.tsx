@@ -14,7 +14,7 @@ export default function Page() {
 
         try {
             console.log('...One')
-            const response = await axios.get('http://localhost:5000/users');
+            const response = await axios.get('http://localhost:4000/users');
             setUsers(response.data)
         } catch (error) {
             console.error(error);

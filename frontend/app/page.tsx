@@ -32,7 +32,8 @@ export default function Home() {
   // use Effect without params (from initial component)
   useEffect(() => {
     console.log('useEffect []');
-    fetch('http://localhost:5000').then(res => {
+      // fetch(`${process.env.HOST}:${process.env.PORT}`).then(res => {
+      fetch('http://localhost:4000').then(res => {
       return res.text();
     }).then((data) => {
       setStr(data);
